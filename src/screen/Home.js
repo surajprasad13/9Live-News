@@ -40,6 +40,7 @@ const Home = () => {
         source={{uri: 'https://9live.news/'}}
         style={{flex: 1}}
         startInLoadingState={true}
+        decelerationRate="fast"
         renderLoading={() => (
           <View
             style={{
