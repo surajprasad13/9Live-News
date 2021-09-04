@@ -23,9 +23,6 @@ const Home = () => {
   }, []);
 
   const onAndroidBackPress = () => {
-    if (!back) {
-      BackHandler.exitApp();
-    }
     if (ref.current) {
       ref.current.goBack();
       return true; // prevent default behavior (exit app)
