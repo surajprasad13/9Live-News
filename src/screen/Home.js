@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 import {WebView} from 'react-native-webview';
+import Splash from './Splash';
 
 const Home = () => {
   const ref = useRef(null);
@@ -38,16 +39,7 @@ const Home = () => {
         style={{flex: 1}}
         startInLoadingState={true}
         decelerationRate="fast"
-        renderLoading={() => (
-          <View
-            style={{
-              flex: 1,
-              justifyContent: 'flex-start',
-              backgroundColor: 'white',
-            }}>
-            <ActivityIndicator size="large" color="red" />
-          </View>
-        )}
+        renderLoading={() => <Splash />}
         onNavigationStateChange={navState => {
           setBack(navState.canGoBack);
         }}

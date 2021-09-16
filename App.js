@@ -19,7 +19,6 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="Splash" component={Splash} />
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
